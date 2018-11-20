@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exempel 1</title>
+</head>
+<body>
+
+
+<form action="go.html">
+
+    Name:<br>
+<input type="text" maxlength="10" name="user"><br><br>
+
+    Email:<br>
+<input type="password" maxlength="12" name="pass"><br><br>
+
+Whats your favorite?<br>
+
+<input type="radio" value="Rock" checked="checked">
+ROCK
+<br>
+
+<input type="radio" value="Pop">
+POP
+<br>
+
+<input type="radio" value="Punk">
+PUNK
+<br><br>
+Comment:<br>
+<textarea name="comment" cols="20" rows="4">
+
+</textarea>
+<br>
+<input type="submit" value="Send">
+
+</form>
+
+<hr>
+
+<br>
+
+<label>Age: <input type="text" name="age"></label>
+Gender:
+<input id="female" type="radio" name="gender" value="f"> <label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m"> <label for="male">Male</label>
+    
+<hr>
+<br><br>
+
+<fieldset>
+    <legend>Contact details</legend>
+     <label>Email:<br>
+        <input type="text" name="email">
+     </label>
+     <br>
+     <label>Mobile:<br>
+       <input type="text" name="mobile">
+     </label>
+</fieldset>
+
+<hr><br>
+
+<p>Please select your favorite music service(s):<br>
+    <input type="checkbox" name="service" value="itunes" checked="checked">
+    Syntax.fm<br>
+    <input type="checkbox" name="service" value=”syntaxfm">
+    iTunes<br>
+ 
+    <input type="checkbox" name="service" value="spotify">
+    Spotify<br>
+    </p>
+    
+    <hr><br>
+
+    <p>What device do you listen to music on?</p>
+    <select name="devices">
+    <option value="ipod">iPod</option>
+    <option value="radio">Radio</option>
+    <option value="computer" selected >Computer</option>
+    </select>
+
+    <hr><br>
+
+    <label for="departure">Departure date:</label> 
+    <input id="departure" type="date" name="depart"> 
+    <input type="submit" value="Submit">
+
+
+<hr><br>
+
+<input type="search" name="search"
+       placeholder="Sök...">
+<input type="submit" value="Sök">
+<input type="reset"  value="Rensa">
+
+
+<hr><br>
+
+
+<p>Upload your song in MP3 format:</p>
+<input type="file" name="user-song" /><br />
+<input type="submit" value="Upload" />
+
+
+<hr><br>
+
+
+<form>
+    First name: <input type="text" name="firstname">
+    <input type="submit" disabled>
+    </form>
+
+
+<hr><br>
+
+
+
+<form>
+    Quantity (between 1 and 5):
+    <input type="number" name="quantity" required>
+    <input type="submit" value="Send">
+    </form>
+
+
+<hr><br>
+
+
+<form action="subscribe.php">
+    <p>Subscribe to our email list:</p>
+    <input type="email" name="email">
+    <input type="submit" name="subscribe" value="Subscribe">
+    </form>
+
+
+
+    <hr><br>
+
+
+    <form>
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity"
+               min="1" max="5" required>
+        <input type="submit" value="Send">
+        </form>
+
+
+        <hr><br>
+
+        <input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+
+<hr><br>
+
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0<input type="range" id="a" name="a" value="0">100 +
+    0<input type="range" id="b" name="b" value="0">100 =
+       <output name="x" for="a b">0</output>
+    </form>
+
+<hr><br>
+
+
+Select a time:
+<input type="time" name="time">
+Select a week:
+<input type="week" name="week">
+Select your favorite color:
+<input type="color" name="favcolor" value="#ff0000">
+Your favorite website
+<input type="url" name="website">
+<input type="hidden" name="custId" value="3487">
+
+
+
+</body>
+</html>
