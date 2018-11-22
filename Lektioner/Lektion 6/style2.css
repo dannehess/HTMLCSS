@@ -1,0 +1,84 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2F0XCb1WE583XXO0IUM1L-OvjsAfdpMy5c4weWImBkw89bllD");
+    background-attachment: fixed;
+    /* background-position: center center */
+    /* background-repeat: no-repeat */
+    /* background-size: cover; */
+}
+
+.image-border-solid{
+    border: 10px solid red;
+    width: 50%;
+    height: 50%;
+}
+
+.image-border-dotted{
+    border: 10px dotted red;
+    width: 50%;
+    height: 50%;
+}
+
+.image-border-dashed{
+    border: 10px dashed red;
+    width: 50%;
+    height: 50%;
+}
+
+.image-small{
+    width: 25%;
+    height: 25%;
+}
+
+.image-medium{
+    width: 50%;
+    height: 50%;
+}
+
+.image-large{
+    width: 75%;
+    height: 75%;
+}
+
+.image-opacity6{
+    opacity: 0.6;
+    width: 50%;
+    height: 50%;
+}
+
+.image-opacity8{
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+}
+
+.image-round-25{
+    width: 25%;
+    height: 25%;
+    border-radius: 25%;
+}
+
+.image-round-50{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+.image-round-100{
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+}
+
+.image-center{
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-right{
+    width: 25%;
+    height: 25%;
+    display: block;
+    float: right;
+}

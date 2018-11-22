@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <title>Lektion 6 - Exempel 1</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin: 100px;
+    font-family: verdana;
+}
+
+.form{
+    background-color: lightgrey;
+    border-radius: 8px;
+    height: auto;
+    width: 650px;
+    padding: 40px;
+}
+
+input[type=submit]{
+    width: 600px;
+    background-color: rgb(22, 154, 22);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    font-family: verdana; color: #000000;
+    width: 570px;
+    padding: 10px;
+    border: 1px solid; color: #FFFFFF;
+    border-radius: 5px; color: #FFFFFF;
+    border-radius: 1px;
+}
+
+hej, select, option{
+    font-family: verdana; color: #000000;
+    width: 595px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid; color: #FFFFFF;
+    border-radius: 5px; color: #FFFFFF;
+    border-radius: 1px;
+}
+
+p{
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    
+    <h1>Lektion 6 - Övningar</h1>
+
+    <div class="form">
+    <form>
+        <label for="fn"><p>First Name</p></label><br>
+        <input type="text" value="Your name..."><br>
+        <label for="ln"><p>Last Name</p></label><br>
+        <input type="text"><br><br>
+        <select name="hej">
+            <option>Australia</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+</body>
+</html>
