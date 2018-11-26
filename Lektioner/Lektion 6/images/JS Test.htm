@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///Users/danielhessling/Desktop/Exempel.html?thebox=on&submit=Skicka -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Test</title>
+
+        <style>
+        
+        p{
+                font-family: sans-serif;
+                font-size: 30px;
+            }
+        
+        </style>
+</head>
+
+<body>
+
+    <p id="password"></p>
+
+
+<script>
+
+let pass = ['a', 'b', 'c', 1, 2, 3 , 3];
+let random = '';
+
+for(let i = 0; i<=pass.length; i++)
+{
+    random += pass.charAt(Math.floor(Math.random())*pass.length);
+}
+
+document.getElementById('password').innerHTML = random + 'hej';
+
+</script>
+
+
+
+
+
+
+</body></html>

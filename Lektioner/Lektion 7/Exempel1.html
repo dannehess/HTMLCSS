@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exempel 1</title>
+
+<style>
+
+        .relative-demo{
+        position: relative;
+        top:20px;
+        left:20px;
+}
+
+        .z-demo {
+    position: absolute;
+    opacity: 0.9;
+    width: 100px;
+    height: 100px;
+  }
+  .box1 {
+    background: lightblue;
+    top: 200px;
+    left: 200px;
+    z-index: 1;
+  }
+  .box2 {
+    background: lightgreen;
+    top: 250px;
+    left: 150px;
+    z-index: 2;
+  }
+
+  
+
+
+</style>
+
+
+</head>
+<body>
+
+    <h1>Exempel 1</h1>
+
+
+
+       <h1>Rubrik</h1>
+       <p class="relative-demo">
+       Lorem ipsum dolor sit amet.
+       </p>
+       
+
+
+       
+
+   <div class="z-demo box1">1</div>
+  <div class="z-demo box2">2</div>
+
+
+    
+</body>
+</html>

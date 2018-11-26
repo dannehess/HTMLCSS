@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exempel 2</title>
+
+<style>
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.box2 {
+   width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 20px solid black;
+}
+
+.box3 {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  border: 20px solid black;
+  float: left;
+
+}
+.box4 {
+  width: 400px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+
+</head>
+<body>
+
+    <h1>Exempel 2</h1>
+
+    <h2>Box-sizing: border-box</h2>
+
+    <div class="box1">
+            Box 1
+          </div>
+          <br>
+          <div class="box2">
+          Box 2
+          </div>
+
+
+          <h2>Float</h2>
+
+          <div class="box3">
+                Box 3
+              </div>
+              <br>
+              <div class="box4">
+              Box 4
+              </div>
+
+              <br><br><br><br>
+
+              <h2>Bilder brevid varandra</h2>
+
+              <div class="clearfix">
+                    <div class="img-container">
+                      <img src="https://images.pexels.com/photos/36753/flower-purple-lical-blosso.jpg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Italy" style="width:100%">
+                    </div>
+                    <div class="img-container">
+                      <img src="https://images.pexels.com/photos/36753/flower-purple-lical-blosso.jpg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Forest" style="width:100%">
+                    </div>
+                    <div class="img-container">
+                      <img src="https://images.pexels.com/photos/36753/flower-purple-lical-blosso.jpg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mountains" style="width:100%">
+                    </div>
+                  </div>
+                  
+                  <p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+    
+</body>
+</html>
