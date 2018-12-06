@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lektion 11 - Exempel 2</title>
+
+    <style>
+
+    body{
+        font-size: 2em;
+        margin: 60px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #container{
+        width: 800px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .left{
+        float: left;
+        width: 190px;
+        margin-right: 10px;
+    }
+
+    .right{
+        float: right;
+        width: 600px;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    #game{
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid #333;
+    }
+
+    #title{
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    #stats{
+        height: 190px;
+        margin-bottom: 10px;
+    }
+
+    #board{
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    #title, #stats, #board, #score, #controls{
+        border: 1px solid #333;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    @supports(display: grid){
+        /* Nollställa height och width */
+        #title, #stats, #board, #score, #controls{
+            height: initial; /* Ändra till default */
+            width: initial; /* Ändra till default */
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr auto;
+        }
+
+        #title{
+            grid-column: 1;
+            grid-row: 1; 
+        }
+
+        #stats{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #score{
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        #board{
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+
+        #controls{
+            grid-column: 2;
+            grid-row: 3;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <!-- RAD 1 -->
+    <div class="left" id="title">Game</div>
+    <div id="board" class="right">Board</div>
+    <div class="left" id="stats">Stats</div>
+
+    <!-- VIKTIGT ATT RENSA FÖR FLOATMODELLEN -->
+    <div class="clearfix"></div>    
+
+    <!-- RAD 2 -->
+    <div id="score" class="left">Score</div>
+    <div id="controls" class="right">Controls</div>
+
+</div>
+
+</body>
+</html>
