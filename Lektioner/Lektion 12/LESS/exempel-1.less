@@ -1,0 +1,43 @@
+@width: 960px;
+@height: 300px;
+@margin: 20px;
+@bg-color: #BABA55;
+@main-color: pink;
+
+
+.container{
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+}
+
+/* Mixins */
+
+.bordered{
+    margin: @margin;
+    border-top: 1px dotted #000;
+    border-bottom: 1px solid #000;
+}
+
+.post{
+    color: @main-color;
+    .bordered;
+}
+
+//OBS! () efter namnet för att inte skicka vår regel till CSS-filen
+
+#circle(@size: 25px){
+    background-color: blue;
+    border-radius: 100%;
+    margin: 10px;
+    width: @size;
+    height: @size;
+}
+
+#small-circle{
+    #circle(50px);
+}
+
+#big-circle{
+    #circle(100px);
+}
